@@ -2,24 +2,28 @@
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
-<web-app>
+<web-app  xmlns="http://java.sun.com/xml/ns/javaee"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+          version="3.0">
   <display-name>Archetype Created Web Application</display-name>
 
-  <servlet>
-    <servlet-name>simpleServlet</servlet-name>
-    <servlet-class>app.servlets.HelloWorldServlet</servlet-class>
-    <init-param>
-      <param-name>name</param-name>
-      <param-value>Остап</param-value>
-    </init-param>
-    <init-param>
-      <param-name>mname</param-name>
-      <param-value>Ибрагимович</param-value>
-    </init-param>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>simpleServlet</servlet-name>
-    <url-pattern>/hello</url-pattern>
-  </servlet-mapping>
+  <filter-mapping>
+    <filter-name>app.filter.JDBCFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>cookieFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <welcome-file-list>
+
+    <welcome-file>home</welcome-file>
+
+    <welcome-file>index.html</welcome-file>
+
+  </welcome-file-list>
 
 </web-app>

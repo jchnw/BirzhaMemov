@@ -21,20 +21,21 @@
 <header>
     <a href="index.html"><img src="shapka.png" width="480"></a>
 </header>
-<form method='post' class='reg-form'>
+<form method='post' action="${pageContext.request.contextPath}/login">
 
     <div class='form-row'>
         <label>Meme Name:</label>
-        <input type="text" name="login"><br />
+        <input type="text" name="login" value="${user.login}"><br />
     </div>
 
     <div class='form-row'>
         <label>Password: </label>
-        <input type="password" name="password">
+        <input type="password" name="password" value="${user.password}">
     </div>
 
     <div class="form-row">
-        <button type="submit" onclick="location.href='/'">Войти/зарегистрироваться</button>
+        <input type="submit" value= "Войти/зарегистрироваться" />
+        <a href="${pageContext.request.contextPath}/">Отменя</a>
     </div>
 
 </form>

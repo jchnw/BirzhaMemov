@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BirzhaMemov:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="BirzhaMemov.war">
+      <element id="artifact" artifact-name="BirzhaMemov:war exploded" />
+    </root>
+  </artifact>
+</component>
