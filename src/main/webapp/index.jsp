@@ -53,8 +53,8 @@
 
         <li class="menu__list"><a href="#">Запостить мем</a>
             <ul class="menu__drop">
-                <li><a href="zduki.html">Мои здюки</a></li>
-                <li><a href="notb.html">Пока не боян</a></li>
+                <li><a href="zduki.jsp">Мои здюки</a></li>
+                <li><a href="notb.jsp">Пока не боян</a></li>
                 <li><a href="#">Я твою мамку эчпочмак</a></li>
             </ul>
         </li>

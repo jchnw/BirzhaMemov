@@ -21,7 +21,7 @@
 <header>
     <a href="index.html"><img src="shapka.png" width="480"></a>
 </header>
-<form method='post' action="${pageContext.request.contextPath}/login">
+<form method='post' action="${pageContext.request.contextPath}/registration">
 
     <div class='form-row'>
         <label>Meme Name:</label>
@@ -35,7 +35,7 @@
 
     <div class="form-row">
         <input type="submit" value= "Войти/зарегистрироваться" />
-        <a href="${pageContext.request.contextPath}/">Отменя</a>
+        <a href="/registration">Отменя</a>
     </div>
 
 </form>

@@ -3,6 +3,8 @@ package app.entities;
 public class User {
     private String login;
     private String password;
+    private Integer user_id;
+    private Integer user_likes;
 
     public User(){}
 
@@ -25,6 +27,23 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Integer getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
+    }
+
+    public Integer getUser_likes()
+    {
+        return user_likes;
+    }
+
+    public void setUser_likes(Integer user_likes) {
+        this.user_likes = user_likes;
     }
 
     @Override

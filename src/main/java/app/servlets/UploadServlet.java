@@ -1,5 +1,6 @@
 package app.servlets;
 
+
 import java.io.File;
 import java.io.IOException;
 
@@ -29,7 +30,7 @@ public class UploadServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("/WEB-INF/jsps/uploadFile.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/upload.jsp");
 
         dispatcher.forward(request, response);
     }
@@ -42,7 +43,7 @@ public class UploadServlet extends HttpServlet {
             System.out.println("Description: " + description);
 
             // Gets absolute path to root directory of web app.
-            String appPath = request.getServletContext().getRealPath("");
+            String appPath = request.getRealPath("");
             appPath = appPath.replace('\\', '/');
 
             // The directory to save uploaded file
@@ -59,16 +60,7 @@ public class UploadServlet extends HttpServlet {
                 fileSaveDir.mkdir();
             }
 
-            // Part list (multi files).
-            for (Part part : request.getParts()) {
-                String fileName = extractFileName(part);
-                if (fileName != null && fileName.length() > 0) {
-                    String filePath = fullSavePath + File.separator + fileName;
-                    System.out.println("Write attachment to file: " + filePath);
-                    // Write to file
-                    part.write(filePath);
-                }
-            }
+
             // Upload successfully!.
             response.sendRedirect(request.getContextPath() + "/uploadFileResults");
         } catch (Exception e) {

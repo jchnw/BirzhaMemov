@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: 1
   Date: 25.12.2017
-  Time: 4:13
+  Time: 4:12
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -32,7 +32,7 @@
         <li class="menu__list"><a href="#">Бояны</a>
             <ul class="menu__drop">
                 <li><a href="15_1.html">пятнадцатый год</a></li>
-                <li><a href="15_2.htm;">пятнадцатый год</a></li>
+                <li><a href="15_2.html">пятнадцатый год</a></li>
                 <li><a href="15_3.html">пятнадцатый год</a></li>
                 <li><a href="15_4.html">ЭТО ВАЖНО</a></li>
             </ul>
@@ -61,7 +61,7 @@
         <li class="menu__list"><a href="#">Запостить мем</a>
             <ul class="menu__drop">
                 <li><a href="zduki.jsp">Мои здюки</a></li>
-                <li><a href="notb.jsp">Пока не боян</a></li>
+                <li><a href="#">Пока не боян</a></li>
                 <li><a href="#">Я твою мамку эчпочмак</a></li>
             </ul>
         </li>
@@ -71,25 +71,29 @@
     <div class="holder">
         <div id="image-1" class="image-lightbox">
             <span class="close"><a href="#">X</a></span>
-            <img src="dollan.jpg" alt="earth!">
+            <img src="gal1.jpg" alt="earth!"><br>
+            <button type="button" style="width: 30px; margin-bottom: 10px;"><img src="heart.png" style="margin-left: -5px;"> </button>
             <a class="expand" href="#image-1"></a>
         </div>
     </div>
     <div class="holder">
         <div id="image-2" class="image-lightbox">
             <span class="close"><a href="#">X</a></span>
-            <img src="lis.jpg" alt="earth!">
+            <img src="gal2.jpg" alt="earth!"><br>
+            <button type="button" style="width: 30px; margin-bottom: 10px;"><img src="heart.png" style="margin-left: -5px;"> </button>
             <a class="expand" href="#image-2"></a>
         </div>
     </div>
     <div class="holder">
         <div id="image-3" class="image-lightbox">
             <span class="close"><a href="#">X</a></span>
-            <img src="mavashi.jpg" alt="earth!">
+            <img src="gal3.jpg" alt="earth!"><br>
+            <button type="button" style="width: 30px;"><img src="heart.png" style="margin-left: -5px;"> </button>
             <a class="expand" href="#image-3"></a>
         </div>
     </div>
 </div>
+
 
 
 

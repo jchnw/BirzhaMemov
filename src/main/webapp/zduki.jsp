@@ -1,12 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 1
-  Date: 25.12.2017
-  Time: 4:13
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <html>
 <head>
     <meta charset="utf-8">
@@ -32,7 +24,7 @@
         <li class="menu__list"><a href="#">Бояны</a>
             <ul class="menu__drop">
                 <li><a href="15_1.html">пятнадцатый год</a></li>
-                <li><a href="15_2.htm;">пятнадцатый год</a></li>
+                <li><a href="15_2.html">пятнадцатый год</a></li>
                 <li><a href="15_3.html">пятнадцатый год</a></li>
                 <li><a href="15_4.html">ЭТО ВАЖНО</a></li>
             </ul>
@@ -71,26 +63,30 @@
     <div class="holder">
         <div id="image-1" class="image-lightbox">
             <span class="close"><a href="#">X</a></span>
-            <img src="dollan.jpg" alt="earth!">
+			<img src="" alt="Nothing is here"><br>
+            <img src="heart.png" style="width: 30px; height: 30px;"> tut text
             <a class="expand" href="#image-1"></a>
         </div>
     </div>
+		
+		
     <div class="holder">
         <div id="image-2" class="image-lightbox">
             <span class="close"><a href="#">X</a></span>
-            <img src="lis.jpg" alt="earth!">
+            <img src="" alt="Make your meme"><br>
+            <img src="heart.png" style="width: 30px; height: 30px;"> tut text
             <a class="expand" href="#image-2"></a>
         </div>
     </div>
     <div class="holder">
         <div id="image-3" class="image-lightbox">
             <span class="close"><a href="#">X</a></span>
-            <img src="mavashi.jpg" alt="earth!">
+            <img src="" alt="JUST DO IT!"><br>
+            <img src="heart.png" style="width: 30px; height: 30px;"> tut text
             <a class="expand" href="#image-3"></a>
         </div>
     </div>
 </div>
-
 
 
 

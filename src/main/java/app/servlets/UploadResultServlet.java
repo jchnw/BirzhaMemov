@@ -2,6 +2,7 @@ package app.servlets;
 
 import java.io.IOException;
 
+import javax.servlet.*;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
     @WebServlet("/upload")
     public class UploadResultServlet extends HttpServlet {
+
         private static final long serialVersionUID = 1L;
 
 
@@ -23,7 +25,7 @@ import javax.servlet.http.HttpServletResponse;
                 throws ServletException, IOException {
 
             RequestDispatcher dispatcher
-                    = request.getServletContext().getRequestDispatcher("/WEB-INF/uploadResults.jsp");
+                    = request.getRequestDispatcher("/uploadResults.jsp");
 
             dispatcher.forward(request, response);
         }

@@ -1,29 +1,30 @@
 package app.entities;
 
 public class Memes {
-    private Long id;
+    private Long picture_id;
     private String name;
     private byte[] imageData;
     private String imageFileName;
+
 
     public Memes() {
 
     }
 
 
-    public Memes(Long id, String name, byte[] imageData, String imageFileName) {
-        this.id = id;
+    public Memes(Long picture_id, String name, byte[] imageData, String imageFileName) {
+        this.picture_id = picture_id;
         this.name = name;
         this.imageData = imageData;
         this.imageFileName = imageFileName;
     }
 
-    public Long getId() {
-        return id;
+    public Long getPicture_id() {
+        return picture_id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setPicture_id(Long picture_id) {
+        this.picture_id = picture_id;
     }
 
     public String getName() {
